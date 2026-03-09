@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 96.9%;
+    --foreground: 0 0% 10.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10.2%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10.2%;
+
+    --primary: 178 67% 21.8%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 174 51% 91%;
+
+    --secondary: 0 0% 35.3%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 35.3%;
+
+    --accent: 16 25% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 4 79% 57%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 178 67% 21.8%;
+
+    --status-healthy: 92 39% 75%;
+    --status-warning: 41 93% 61%;
+    --status-critical: 4 79% 57%;
+    --status-healthy-dot: 88 50% 53%;
+    --status-warning-dot: 45 100% 51%;
+    --status-critical-dot: 4 86% 56%;
+
+    --tag-neutral: 0 0% 29%;
+    --tag-healthy: 178 67% 21.8%;
+    --tag-warning: 30 91% 37%;
+    --tag-critical: 0 79% 42%;
+    --tag-info: 221 83% 48%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 10.2%;
+    --sidebar-foreground: 0 0% 95.9%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 0 0% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 10.2%;
+    --foreground: 0 0% 96.9%;
+
+    --card: 0 0% 14%;
+    --card-foreground: 0 0% 96.9%;
+
+    --popover: 0 0% 14%;
+    --popover-foreground: 0 0% 96.9%;
+
+    --primary: 178 67% 21.8%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 174 51% 91%;
+
+    --secondary: 0 0% 29%;
+    --secondary-foreground: 0 0% 96.9%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 16 25% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 4 79% 57%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 178 67% 21.8%;
+
+    --status-healthy: 92 39% 75%;
+    --status-warning: 41 93% 61%;
+    --status-critical: 4 79% 57%;
+    --status-healthy-dot: 88 50% 53%;
+    --status-warning-dot: 45 100% 51%;
+    --status-critical-dot: 4 86% 56%;
+
+    --tag-neutral: 0 0% 29%;
+    --tag-healthy: 178 67% 21.8%;
+    --tag-warning: 30 91% 37%;
+    --tag-critical: 0 79% 42%;
+    --tag-info: 221 83% 48%;
+
+    --sidebar-background: 0 0% 10.2%;
+    --sidebar-foreground: 0 0% 95.9%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 0 0% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.stat_Card_size{
+  width: 164px;
+  height: 168px;
+  padding: 16px;
+}
+.stat_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.stat_row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.bg-transparent{
+  background-color: transparent !important;
+}
